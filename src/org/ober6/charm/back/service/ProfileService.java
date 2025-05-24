@@ -1,4 +1,39 @@
 package org.ober6.charm.back.service;
 
+import org.ober6.charm.back.dao.ProfileDao;
+import org.ober6.charm.back.model.Profile;
+import java.util.List;
+
+import java.util.Optional;
+
 public class ProfileService {
+
+    private final ProfileDao dao;
+
+    public ProfileService(ProfileDao dao) {
+        this.dao = dao;
+    }
+
+    public Profile save(Profile profile){
+        return dao.save(profile);
+    }
+
+    public Optional<Profile> findById(Long id){
+        if(id == null) return Optional.empty();
+        return dao.findById(id);
+    }
+
+    public boolean delete(Long id){
+        if(id ==null) return false;
+       return dao.delete(id);
+    }
+
+    public void update(Profile profile){
+//        if(profile==null) return;
+        dao.update(profile);
+    }
+
+    public List<Profile> findAll() {
+        return dao.findAll();
+    }
 }
