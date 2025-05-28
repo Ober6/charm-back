@@ -10,20 +10,24 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class ProfileDao {
 
-    private final ConcurrentHashMap<Long, Profile> storage;
-
     private final AtomicLong idStorage;
+    private final ConcurrentHashMap<Long, Profile> storage;
 
     public ProfileDao() {
         this.storage = new ConcurrentHashMap<>();
-        this.idStorage = new AtomicLong();
+        Profile profile = new Profile();
+        profile.setId(1L);
+        profile.setEmail("ivanov@mail.ru");
+        profile.setName("Ivan");
+        profile.setSurname("Ivanov");
+        profile.setAbout("Man");
+        this.storage.put(1L, profile);
+        this.idStorage = new AtomicLong(1L);
     }
 
     public Profile save(Profile profile) {
-        long id = idStorage.incrementAndGet();
-        profile.setId(id);
-        storage.put(id, profile);
-        System.out.println(storage.values());
+        profile.setId(idStorage.getAndIncrement());
+        storage.put(profile.getId(), profile);
         return profile;
     }
 
@@ -31,8 +35,8 @@ public class ProfileDao {
         return Optional.ofNullable(storage.get(id));
     }
 
-    public boolean delete(Long id) {
-        return storage.remove(id) != null;
+    public List<Profile> findAll() {
+        return new ArrayList<>(storage.values());
     }
 
     public void update(Profile profile) {
@@ -41,7 +45,7 @@ public class ProfileDao {
         storage.put(id, profile);
     }
 
-    public List<Profile> findAll() {
-        return new ArrayList<>(storage.values());
+    public boolean delete(Long id) {
+        return storage.remove(id) != null;
     }
 }
