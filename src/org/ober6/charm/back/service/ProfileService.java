@@ -3,15 +3,19 @@ package org.ober6.charm.back.service;
 import org.ober6.charm.back.dao.ProfileDao;
 import org.ober6.charm.back.model.Profile;
 import java.util.List;
-
 import java.util.Optional;
 
 public class ProfileService {
 
-    private final ProfileDao dao;
+    private static final ProfileService INSTANCE = new ProfileService();
 
-    public ProfileService(ProfileDao dao) {
-        this.dao = dao;
+    private final ProfileDao dao = ProfileDao.getInstance();
+
+    public ProfileService() {
+    }
+
+    public static ProfileService getInstance() {
+        return INSTANCE;
     }
 
     public Profile save(Profile profile){
@@ -29,7 +33,6 @@ public class ProfileService {
     }
 
     public void update(Profile profile){
-//        if(profile==null) return;
         dao.update(profile);
     }
 

@@ -14,55 +14,30 @@ import java.io.PrintWriter;
 @WebServlet("/like")
 public class LikeController extends HttpServlet {
 
-    private String servletName;
-
-    private final LikeService likeService = LikeService.getINSTANCE();
+    private final LikeService service = LikeService.getInstance();
 
     @Override
-    public void init(ServletConfig config) throws ServletException {
-        this.servletName = config.getServletName();
-        System.out.println("Init servlet" + config.getServletName());
-    }
-
-    @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.service(req, resp);
+    public void init(ServletConfig config) {
+        System.out.println("Servlet started, name: " + config.getServletName());
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String id = req.getParameter("id");
-        String answer =  "10";
-        if(id != null){
-            long l = Long.parseLong(id);
-            long answerl = likeService.getLikesById(l);
-            answer = answerl + "";
-        }
-        String userAgent = req.getHeader("User-Agent");
-        resp.setContentType("text/html");
-        resp.setCharacterEncoding("UTF-8");;
-        try(PrintWriter writer = resp.getWriter()) {
+        long id = Long.parseLong(req.getParameter("id"));
+
+        try (PrintWriter writer = resp.getWriter()) {
+            resp.setContentType("text/html");
+            resp.setCharacterEncoding("UTF-8");
             writer.write("<h2>");
-            writer.write("<p>");
-            writer.write("Answer"+answer);
-            writer.write("</p>");
-            writer.write("<p>");
-            writer.write("Header userAgent"+userAgent);
-            writer.write("</p>");
-            writer.write("<p>");
-            writer.write("request URI"+req.getRequestURI());
-            writer.write("</p>");
+            writer.write("<p> RequestURI: " + req.getRequestURI() + "</p>");
+            writer.write("<p> User agent header: " + req.getHeader("User-Agent") + "</p>");
+            writer.write("<p> Likes count: " + service.getLikesByProfileId(id) + "</p>");
             writer.write("</h2>");
         }
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
-    }
-
-    @Override
     public void destroy() {
-        System.out.println("Destroy servlet " + servletName);
+        System.out.println("Servlet destroyed");
     }
 }

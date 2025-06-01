@@ -3,16 +3,14 @@ package org.ober6.charm.back.service;
 public class LikeService {
 
     private static final LikeService INSTANCE = new LikeService();
-
-    private LikeService(){
-
+    private LikeService() {
     }
 
-    public static LikeService getINSTANCE() {
+    public static LikeService getInstance() {
         return INSTANCE;
     }
 
-    public long getLikesById(long id){
-        return 10 + id;
+    public int getLikesByProfileId(long profileId) {
+        return 10;
     }
 }
