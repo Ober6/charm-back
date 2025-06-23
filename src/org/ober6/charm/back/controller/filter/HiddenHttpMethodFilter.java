@@ -1,4 +1,4 @@
-package ru.eliseev.charm.back.controller.filter;
+package org.ober6.charm.back.controller.filter;
 
 import jakarta.servlet.Filter;
 import jakarta.servlet.FilterChain;
@@ -11,7 +11,7 @@ import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletRequestWrapper;
 import jakarta.servlet.http.HttpServletResponse;
-import ru.eliseev.charm.back.model.Gender;
+import org.ober6.charm.back.model.Gender;
 
 import java.io.IOException;
 import java.util.Enumeration;
@@ -21,7 +21,7 @@ import java.util.Locale;
 public class HiddenHttpMethodFilter implements Filter {
 
     private static final String METHOD_PARAM = "_method";
-    
+
     @Override
     public void init(FilterConfig filterConfig) {
         ServletContext servletContext = filterConfig.getServletContext();
@@ -37,7 +37,7 @@ public class HiddenHttpMethodFilter implements Filter {
         HttpServletResponse response = (HttpServletResponse) res;
 
         String paramValue = request.getParameter(METHOD_PARAM);
-        
+
         if ("POST".equals(request.getMethod()) && paramValue != null && !paramValue.isBlank()) {
             String method = paramValue.toUpperCase(Locale.ENGLISH);
             HttpServletRequest wrapper = new HttpMethodRequestWrapper(request, method);

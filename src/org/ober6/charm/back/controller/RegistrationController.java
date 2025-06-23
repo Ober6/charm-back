@@ -1,11 +1,11 @@
-package ru.eliseev.charm.back.controller;
+package org.ober6.charm.back.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import ru.eliseev.charm.back.model.Profile;
+import org.ober6.charm.back.model.Profile;
 
 import java.io.IOException;
 

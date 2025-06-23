@@ -1,7 +1,7 @@
-package ru.eliseev.charm.back.service;
+package org.ober6.charm.back.service;
 
-import ru.eliseev.charm.back.dao.ProfileDao;
-import ru.eliseev.charm.back.model.Profile;
+import org.ober6.charm.back.dao.ProfileDao;
+import org.ober6.charm.back.model.Profile;
 
 import java.util.List;
 import java.util.Optional;

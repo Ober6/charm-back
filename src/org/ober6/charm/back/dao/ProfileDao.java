@@ -1,7 +1,7 @@
-package ru.eliseev.charm.back.dao;
+package org.ober6.charm.back.dao;
 
-import ru.eliseev.charm.back.model.Gender;
-import ru.eliseev.charm.back.model.Profile;
+import org.ober6.charm.back.model.Gender;
+import org.ober6.charm.back.model.Profile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class ProfileDao {
-    
+
     private static final ProfileDao INSTANCE = new ProfileDao();
 
     private final AtomicLong idStorage;
