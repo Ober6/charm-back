@@ -4,14 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fce9cfcb-95fa-47cc-8ebf-7e6e9bac75fb" name="Changes" comment="" />
+    <list default="true" id="fce9cfcb-95fa-47cc-8ebf-7e6e9bac75fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/words.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/words_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/words_ru.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/filter/LanguageFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/service/WordBundle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-api-3.0.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/WEB-INF/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/WEB-INF/jsp/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/LanguageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/LanguageController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -21,16 +47,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/oberm/IdeaProjects/charm-back"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.Tomcat: charm-back.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oberm/IdeaProjects/charm-back&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oberm\IdeaProjects\charm-back\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat: charm-back" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="" />
+      <option name="contextPath" value="/charm-back" />
+      <option name="docBase" value="C:\Users\oberm\IdeaProjects\charm-back\resources" />
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/10.1.41" />
+          <option name="path" value="$USER_HOME$/app/charm.back.materials/apache-tomcat-10.1.41-windows-x64/apache-tomcat-10.1.41" />
+          <option name="version" value="10.1.41.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="charm-back" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fce9cfcb-95fa-47cc-8ebf-7e6e9bac75fb" name="Changes" comment="" />
