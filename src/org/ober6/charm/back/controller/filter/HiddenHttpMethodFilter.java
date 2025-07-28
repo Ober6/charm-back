@@ -12,9 +12,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletRequestWrapper;
 import jakarta.servlet.http.HttpServletResponse;
 import org.ober6.charm.back.model.Gender;
+import org.ober6.charm.back.model.Status;
 
 import java.io.IOException;
-import java.util.Enumeration;
 import java.util.Locale;
 
 @WebFilter("/*")
@@ -27,6 +27,9 @@ public class HiddenHttpMethodFilter implements Filter {
         ServletContext servletContext = filterConfig.getServletContext();
         if (servletContext.getAttribute("genders") == null) {
             servletContext.setAttribute("genders", Gender.values());
+        }
+        if (servletContext.getAttribute("statuses") == null) {
+            servletContext.setAttribute("statuses", Status.values());
         }
     }
 

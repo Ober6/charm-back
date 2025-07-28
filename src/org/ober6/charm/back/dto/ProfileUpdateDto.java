@@ -1,8 +1,11 @@
-package org.ober6.charm.back.model;
+package org.ober6.charm.back.dto;
+
+import org.ober6.charm.back.model.Gender;
+import org.ober6.charm.back.model.Status;
 
 import java.time.LocalDate;
 
-public class Profile {
+public class ProfileUpdateDto {
     private Long id;
     private String email;
     private String password;

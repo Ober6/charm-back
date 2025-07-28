@@ -1,6 +1,5 @@
 package org.ober6.charm.back.controller;
 
-import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
@@ -13,7 +12,7 @@ import java.io.IOException;
 public class LanguageController extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String lang = req.getParameter("lang");
 
         Cookie cookie = new Cookie("lang", "en");

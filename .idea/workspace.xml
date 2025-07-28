@@ -5,17 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce9cfcb-95fa-47cc-8ebf-7e6e9bac75fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-3.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/words.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/words_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/words_ru.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/filter/LanguageFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/service/WordBundle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/WEB-INF/jsp/profiles.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/WEB-INF/jsp/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/WEB-INF/jsp/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/dto/ProfileGetDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/dto/ProfileUpdateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/dto/RegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/mapper/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/mapper/ProfileUpdateDtoToProfileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/mapper/RegistrationDtoToProfileMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/mapper/RequestToProfileUpdateDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/mapper/RequestToRegistrationDtoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/model/Status.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-api-3.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/jakarta.servlet.jsp.jstl-api-3.0.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/WEB-INF/jsp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/WEB-INF/jsp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/WEB-INF/jsp/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/WEB-INF/jsp/profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/WEB-INF/jsp/profile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/words.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/words.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/words_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/words_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/words_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/words_ru.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/LanguageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/LanguageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/filter/HiddenHttpMethodFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/controller/filter/HiddenHttpMethodFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ober6/charm/back/dao/ProfileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/dao/ProfileDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/ober6/charm/back/model/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ober6/charm/back/model/Profile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
